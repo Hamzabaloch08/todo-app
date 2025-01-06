@@ -558,16 +558,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[70vh\] {
@@ -576,6 +576,14 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[75vh\] {
+  height: 75vh;
+}
+
+.h-\[78vh\] {
+  height: 78vh;
 }
 
 .w-\[100\%\] {
@@ -590,20 +598,12 @@ video {
   width: 75%;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[80\] {
-  width: 80;
-}
-
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -630,12 +630,8 @@ video {
   gap: 1.25rem;
 }
 
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-md {
@@ -663,6 +659,11 @@ video {
   background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
 .bg-sky-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(224 242 254 / var(--tw-bg-opacity, 1));
@@ -678,50 +679,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
-}
-
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-4 {
@@ -739,42 +703,13 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
 }
 
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -798,9 +733,9 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.text-white {
+.text-blue-500 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
 }
 
 .text-red-500 {
@@ -808,9 +743,9 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
 }
 
-.text-blue-500 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .outline-none {
@@ -818,28 +753,67 @@ video {
   outline-offset: 2px;
 }
 
-.outline {
-  outline-style: solid;
-}
-
 .outline-blue-500 {
   outline-color: #3b82f6;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.hover\:bg-orange-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
+#todo-list {
+  width: 80%;
+  overflow-y: hidden;
+  /* Hide the scrollbar initially */
 }
 
-.hover\:bg-blue-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+/* Apply custom scrollbar styling when it has overflow */
+
+#todo-list.overflow-y-scroll {
+  overflow-y: scroll;
+  /* Show the scrollbar when the class is added */
+}
+
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+
+#todo-list::-webkit-scrollbar {
+  width: 10px;
+  /* Adjust the width of the scrollbar */
+  height: 10px;
+  /* Optional: scrollbar for horizontal scrolling */
+}
+
+#todo-list::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+  /* Light grey track */
+  border-radius: 10px;
+  /* Rounded corners for the track */
+  margin: 5px;
+  /* Add space around the track */
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+  background-color: #60a5fa;
+  /* Use the color for bg-blue-400 (Tailwind's #60a5fa) */
+  border-radius: 10px;
+  /* Rounded corners for the thumb */
+  border: 3px solid #f4f4f4;
+  /* Border around the thumb */
+}
+
+#todo-list::-webkit-scrollbar-thumb:hover {
+  background-color: #3b82f6;
+  /* Darker blue when hovered (Tailwind's bg-blue-500) */
+}
+
+/* Firefox scrollbar customization */
+
+#todo-list {
+  scrollbar-width: thin;
+  /* Make the scrollbar thinner */
+  scrollbar-color: #60a5fa #f4f4f4;
+  /* Use the blue color for thumb and light grey for track */
 }
 
 .hover\:bg-red-600:hover {
@@ -847,14 +821,14 @@ video {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-red-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
-}
-
 .hover\:text-blue-700:hover {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-red-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -866,3 +840,4 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
+      

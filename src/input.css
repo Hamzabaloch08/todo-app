@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#todo-list {
+    width: 80%;
+    overflow-y: hidden; /* Hide the scrollbar initially */
+  }
+  
+  /* Apply custom scrollbar styling when it has overflow */
+  #todo-list.overflow-y-scroll {
+    overflow-y: scroll; /* Show the scrollbar when the class is added */
+  }
+  
+  /* Webkit-based browsers (Chrome, Safari, Edge) */
+  #todo-list::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+    height: 10px; /* Optional: scrollbar for horizontal scrolling */
+  }
+  
+  #todo-list::-webkit-scrollbar-track {
+    background-color: #f4f4f4; /* Light grey track */
+    border-radius: 10px; /* Rounded corners for the track */
+    margin: 5px; /* Add space around the track */
+  }
+  
+  #todo-list::-webkit-scrollbar-thumb {
+    background-color: #60a5fa; /* Use the color for bg-blue-400 (Tailwind's #60a5fa) */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid #f4f4f4; /* Border around the thumb */
+  }
+  
+  #todo-list::-webkit-scrollbar-thumb:hover {
+    background-color: #3b82f6; /* Darker blue when hovered (Tailwind's bg-blue-500) */
+  }
+  
+  /* Firefox scrollbar customization */
+  #todo-list {
+    scrollbar-width: thin; /* Make the scrollbar thinner */
+    scrollbar-color: #60a5fa #f4f4f4; /* Use the blue color for thumb and light grey for track */
+  }
+      

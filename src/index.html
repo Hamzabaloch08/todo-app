@@ -6,8 +6,9 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-sky-100">
+
     <div class="h-screen w-full flex justify-center items-center">
-      <div class="bg-white py-12 flex flex-col items-center gap-10 h-[70vh] w-[48%]">
+      <div class="bg-white py-12 flex flex-col items-center gap-10 h-[78vh] w-[48%]">
         <h1 class="text-2xl capitalize font-bold tracking-wider">Grocery Bud</h1>
         <div class="flex justify-center w-[100%]">
           <input id="todo-input" type="text" class="bg-slate-200 rounded-tl-lg rounded-bl-lg pl-5 w-[75%] outline-blue-500" maxlength="50"/>
@@ -19,6 +20,12 @@
         <div id="todo-list" class="w-[80%]">
           <!-- List will be appended here -->
         </div>
+
+        <!-- Clear All Button -->
+        <button id="clear-all-button" class="bg-red-500 text-white px-4 py-2 rounded-md mt-5 hover:bg-red-600 hidden">
+          Clear All
+        </button>
+
       </div>
     </div>
 
