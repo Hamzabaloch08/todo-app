@@ -6,28 +6,24 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-sky-100">
-
-
-
     <div class="h-screen w-full flex justify-center items-center">
-        <div class="bg-white py-12 flex flex-col items-center gap-10 h-[70vh] w-[48%]">
-            <h1 class="text-2xl capitalize font-bold tracking-wider">grocery bud</h1>
-            <div class="flex justify-center w-[100%]">
-                <input type="text" class="bg-slate-200 rounded-tl-lg rounded-bl-lg w-[75%]">
-                <button class="bg-blue-400 text-black text-white px-4 py-2 rounded-tr-lg rounded-br-lg hover:bg-orange-500 transition-all capitalize">
-                    add
-                </button>
-            </div>
-            
-
-            <div>
-
-            </div>
-
+      <div class="bg-white py-12 flex flex-col items-center gap-10 h-[70vh] w-[48%]">
+        <h1 class="text-2xl capitalize font-bold tracking-wider">Grocery Bud</h1>
+        <div class="flex justify-center w-[100%]">
+          <input id="todo-input" type="text" class="bg-slate-200 rounded-tl-lg rounded-bl-lg pl-5 w-[75%] outline-blue-500" maxlength="50"/>
+          <button id="add-button" class="bg-blue-400 text-black px-4 py-2 rounded-tr-lg rounded-br-lg active:bg-blue-500 capitalize font-semibold">
+            Add
+          </button>
         </div>
+
+        <div id="todo-list" class="w-[80%]">
+          <!-- List will be appended here -->
+        </div>
+      </div>
     </div>
 
 
 
+    <script src="app.js"></script>
   </body>
 </html>
