@@ -17,5 +17,5 @@ A simple and responsive web application to manage your grocery list, built with 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Hamzabaloch08/grocery-bud.git
+   git clone https://github.com/Hamzabaloch08/todo-app.git
 
